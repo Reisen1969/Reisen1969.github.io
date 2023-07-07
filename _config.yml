@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Rayrain's blog
 subtitle: ''
-description: ''
+description: '操作系统, 计算机, linux'
 keywords:
 author: John Doe
 language: en
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://github.com/Reisen1969/Reisen1969.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
