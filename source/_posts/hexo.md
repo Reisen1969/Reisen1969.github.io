@@ -1,7 +1,9 @@
 ---
 title: 使用hexo
-categories: note
-tags: [hexo]
+categories:
+- note
+tags:
+- hexo
 ---
 
 使用hexo的一些记录
