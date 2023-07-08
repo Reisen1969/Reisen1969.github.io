@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://reisen1969.github.io/"/>
+  
+  <link rel="canonical" href="https://reisen1969.github.io/2023/07/08/riscv/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,18 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Rayrain's blog</title>
-  <meta name="keywords" content="">
+  <title>启动riscv内核 - Rayrain's blog</title>
+  <meta name="keywords" content="riscv,linux,null">
   <meta desc name="description" content="操作系统, 计算机, linux - John Doe - Rayrain's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rayrain&#39;s blog">
-<meta property="og:url" content="https://reisen1969.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="启动riscv内核">
+<meta property="og:url" content="https://reisen1969.github.io/2023/07/08/riscv/index.html">
 <meta property="og:site_name" content="Rayrain&#39;s blog">
-<meta property="og:description" content="操作系统, 计算机, linux">
+<meta property="og:description" content="在这里只是记录一下,方便以后查阅 本文的内容来源 riscv官方网页  解决文件系统问题 编译busybox 9p 获取源码123git clone https:&#x2F;&#x2F;github.com&#x2F;qemu&#x2F;qemugit clone https:&#x2F;&#x2F;github.com&#x2F;torvalds&#x2F;linuxgit clone https:&#x2F;&#x2F;git.busybox.net&#x2F;busybox  编译qemu12.&#x2F;c">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-07-08T08:41:52.848Z">
+<meta property="article:modified_time" content="2023-07-08T08:41:52.848Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="riscv">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2170,7 +2174,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2439,7 +2443,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2504,7 +2508,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2514,154 +2518,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://reisen1969.github.io/2023/07/08/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Rayrain's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Rayrain's blog">
-    <meta itemprop="description" content="操作系统, 计算机, linux">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/08/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/08/hello-world/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://reisen1969.github.io/2023/07/08/hexo/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Rayrain's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Rayrain's blog">
-    <meta itemprop="description" content="操作系统, 计算机, linux">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/08/hexo/"  itemprop="url">
-        使用hexo
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        使用hexo的一些记录
-建站123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install
-这个文件夹&#x2F;主目录 作为 main 分支的文件夹, 我打算将gh-pages作为我的主页面.
-一些快捷命令1$ hexo server
-生成网站并本地预览
-1$ hexo deploy
-可以一件部署到github需要事先 在 _co...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/note/">note</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/note/" itemprop="url"><span itemprop="name">note</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/08/hexo/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://reisen1969.github.io/2023/07/08/riscv/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Rayrain's blog">
@@ -2671,133 +2528,243 @@ Qu...
     <meta itemprop="description" content="操作系统, 计算机, linux">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/08/riscv/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         启动riscv内核
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        在这里只是记录一下,方便以后查阅
-本文的内容来源
-riscv官方网页 
-解决文件系统问题
-编译busybox
-9p
-获取源码123git clone https://github.com/qemu/qemugit clone https://github.com/torvalds/linuxgit clone https://git.busybox.net/busybox
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
 
-编译qemu12...
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/note/">note</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/note/" itemprop="url"><span itemprop="name">note</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/note/">note</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/note/" itemprop="url"><span itemprop="name">note</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jul 8, 2023</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>在这里只是记录一下,方便以后查阅</p>
+<p>本文的内容来源</p>
+<p><a target="_blank" rel="noopener" href="https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html">riscv官方网页</a> </p>
+<p><a target="_blank" rel="noopener" href="https://github.com/riscv-admin/risc-v-getting-started-guide/issues/29">解决文件系统问题</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jzcn/p/14932093.html">编译busybox</a></p>
+<p><a target="_blank" rel="noopener" href="https://wiki.qemu.org/Documentation/9psetup">9p</a></p>
+<h2 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/qemu/</span>qemu</span><br><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/torvalds/</span>linux</span><br><span class="line">git clone https:<span class="regexp">//gi</span>t.busybox.net/busybox</span><br></pre></td></tr></table></figure>
+
+<h2 id="编译qemu"><a href="#编译qemu" class="headerlink" title="编译qemu"></a>编译qemu</h2><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./configure</span> <span class="params">--target-list=riscv64-softmmu</span> <span class="params">--enable-virtfs</span></span><br><span class="line">make -j $<span class="params">(nproc)</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="编译kernel"><a href="#编译kernel" class="headerlink" title="编译kernel"></a>编译kernel</h2><figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这里设置的工具链,以自己环境里的为准</span></span><br><span class="line"><span class="comment">//生成配置文件</span></span><br><span class="line"><span class="built_in">make</span> ARCH=riscv CROSS_COMPILE=riscv64-linux-gnu- defconfig</span><br><span class="line"><span class="comment">//开始编译</span></span><br><span class="line"><span class="built_in">make</span> ARCH=riscv CROSS_COMPILE=riscv64-linux-gnu- -j $(nproc)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//编译方法2</span></span><br><span class="line">  <span class="built_in">make</span> ARCH=riscv CROSS_COMPILE=riscv64-linux-gnu- defconfig</span><br><span class="line">  <span class="built_in">make</span> ARCH=riscv CROSS_COMPILE=riscv64-linux-gnu-  menuconfig</span><br><span class="line">  <span class="built_in">make</span> -j $(nproc) ARCH=riscv CROSS_COMPILE=riscv64-linux-gnu- vmlinux</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="编译Busybox"><a href="#编译Busybox" class="headerlink" title="编译Busybox"></a>编译Busybox</h2><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">make ARCH<span class="operator">=</span>riscv CROSS_COMPILE<span class="operator">=</span>riscv64-linux-gnu- defconfig</span><br><span class="line">make ARCH<span class="operator">=</span>riscv CROSS_COMPILE<span class="operator">=</span>riscv64-linux-gnu- menuconfig</span><br><span class="line">//Check Settings - Build static binary (no shared libs)</span><br><span class="line">make ARCH<span class="operator">=</span>riscv CROSS_COMPILE<span class="operator">=</span>riscv64-linux-gnu- install CONFIG_PREFIX<span class="operator">=</span>./rootfs</span><br><span class="line">//这里选择将busybox安装到本目录下的./rootfs文件夹下</span><br></pre></td></tr></table></figure>
+
+<h2 id="制作根文件系统"><a href="#制作根文件系统" class="headerlink" title="制作根文件系统"></a>制作根文件系统</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//制作文件系统</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> youer_workspace</span></span><br><span class="line">mkdir rootfs</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> rootfs</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">dd</span> <span class="keyword">if</span>=/dev/zero of=rootfs.img bs=1M count=50</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">mkfs.ext2 -L riscv-rootfs rootfs.img</span></span><br><span class="line"></span><br><span class="line">//将它挂载到 mnt/rootfs</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo <span class="built_in">mkdir</span> /mnt/rootfs</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo mount rootfs.img /mnt/rootfs</span></span><br><span class="line"></span><br><span class="line">//将busybox编译出来的内容复制到rootfs.img文件系统中</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo <span class="built_in">cp</span> -ar your_busybox/rootfs/* /mnt/rootfs</span></span><br><span class="line"></span><br><span class="line">//创建根目录</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo <span class="built_in">mkdir</span> /mnt/rootfs/&#123;dev,home,mnt,proc,sys,tmp,var&#125;</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo <span class="built_in">chown</span> -R -h root:root /mnt/rootfs</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">//</span>检查文件系统</span><br><span class="line">$ df <span class="regexp">/mnt/</span>rootfs</span><br><span class="line">Filesystem     <span class="number">1</span>K-blocks  Used Available Use% Mounted on</span><br><span class="line"><span class="regexp">/dev/</span>loop5         <span class="number">49584</span>  <span class="number">1704</span>     <span class="number">45320</span>   <span class="number">4</span>% <span class="regexp">/mnt/</span>rootfs</span><br><span class="line">$ mount | grep rootfs</span><br><span class="line">riscv64-linux<span class="regexp">/rootfs/</span>rootfs.img on <span class="regexp">/mnt/</span>rootfs type ext2 (rw,relatime)</span><br><span class="line"></span><br><span class="line"><span class="regexp">//</span>卸载文件系统</span><br><span class="line">$ sudo umount <span class="regexp">/mnt/</span>rootfs</span><br><span class="line">$ sudo rmdir <span class="regexp">/mnt/</span>rootfs</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="使用根文件系统启动内核"><a href="#使用根文件系统启动内核" class="headerlink" title="使用根文件系统启动内核"></a>使用根文件系统启动内核</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">qemu-system-riscv64 -nographic -machine virt \</span><br><span class="line">     -kernel linux/arch/riscv/boot/Image -append <span class="string">&quot;root=/dev/vda ro console=ttyS0&quot;</span> \</span><br><span class="line">     -drive <span class="attribute">file</span>=your_rootfs.img,format=raw,id=hd0 \</span><br><span class="line">     -device virtio-blk-device,<span class="attribute">drive</span>=hd0 \</span><br><span class="line">     -fsdev local,<span class="attribute">id</span>=p9fs,path=./share,security_model=mapped \</span><br><span class="line">-device virtio-9p-pci,<span class="attribute">fsdev</span>=p9fs,mount_tag=p9</span><br></pre></td></tr></table></figure>
+
+<h2 id="挂载共享目录"><a href="#挂载共享目录" class="headerlink" title="挂载共享目录"></a>挂载共享目录</h2><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mount</span> p9 -t <span class="number">9</span>p /mnt</span><br></pre></td></tr></table></figure>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/07/08/riscv/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-08T08:41:52+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jul 8, 2023</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://reisen1969.github.io/2023/07/08/wsl2proxy/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Rayrain's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Rayrain's blog">
-    <meta itemprop="description" content="操作系统, 计算机, linux">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/riscv/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>riscv</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>linux</p></a></div>
+  <span hidden itemprop="keywords">riscv linux</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://reisen1969.github.io/2023/07/08/riscv/&title=启动riscv内核 - Rayrain's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://reisen1969.github.io/2023/07/08/riscv/&title=启动riscv内核 - Rayrain's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://reisen1969.github.io/2023/07/08/riscv/&title=启动riscv内核 - Rayrain's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/07/08/hexo/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>使用hexo</p>
+          <p class='content'>使用hexo的一些记录
+建站123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install
+这个文件夹&#x2F;主目录 作为 mai...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/07/08/wsl2proxy/'>
+          <p class='title'>wsl2终端代理设置<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>wsl2终端代理设置12345678910111213141516171819202122232425262728293031323334353637383940414243444546host...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2023/07/08/riscv/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/08/wsl2proxy/"  itemprop="url">
-        wsl2终端代理设置
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        wsl2终端代理设置12345678910111213141516171819202122232425262728293031323334353637383940414243444546hostip=$(cat /etc/resolv.conf | grep nameserver | awk &#x27;&#123; print $2 &#125;&#x27;)wslip=$(hostnam...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/note/">note</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/note/" itemprop="url"><span itemprop="name">note</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/07/08/wsl2proxy/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
+
+
+
+
 
 
 </div>
@@ -2808,134 +2775,48 @@ riscv官方网页
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Rayrain's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/note/" href="/categories/note/"
-            active-action="action-categoriesnote"
-            ><div class='name'>note</div><div class='badge'>(3)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/proxy/" style="font-size: 14px; color: #999">proxy</a> <a href="/tags/riscv/" style="font-size: 14px; color: #999">riscv</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%BA%90%E7%A0%81"><span class="toc-text">获取源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91qemu"><span class="toc-text">编译qemu</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91kernel"><span class="toc-text">编译kernel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91Busybox"><span class="toc-text">编译Busybox</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B6%E4%BD%9C%E6%A0%B9%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">制作根文件系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%A0%B9%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E5%86%85%E6%A0%B8"><span class="toc-text">使用根文件系统启动内核</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%82%E8%BD%BD%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95"><span class="toc-text">挂载共享目录</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2970,7 +2851,7 @@ riscv官方网页
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2979,15 +2860,15 @@ riscv官方网页
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
-      cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3484,7 +3365,7 @@ riscv官方网页
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Rayrain's blog","url":"https://reisen1969.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://reisen1969.github.io/","sameAs":["https://github.com/volantis-x"],"description":"操作系统, 计算机, linux"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://reisen1969.github.io/","name":"Rayrain's blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Rayrain's blog","url":"https://reisen1969.github.io/","keywords":null,"description":"操作系统, 计算机, linux","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://reisen1969.github.io/","description":"操作系统, 计算机, linux"},"publisher":{"@type":"Organization","name":"Rayrain's blog","url":"https://reisen1969.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://reisen1969.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"操作系统, 计算机, linux","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://reisen1969.github.io/"},"publisher":{"@type":"Organization","name":"Rayrain's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Rayrain's blog","url":"https://reisen1969.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://reisen1969.github.io/","sameAs":["https://github.com/volantis-x"],"description":"操作系统, 计算机, linux"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://reisen1969.github.io/","name":"Rayrain's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://reisen1969.github.io/categories/note/","name":"note"}},{"@type":"ListItem","position":3,"item":{"@id":"https://reisen1969.github.io/2023/07/08/riscv/","name":"启动riscv内核"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Rayrain's blog","url":"https://reisen1969.github.io/","keywords":null,"description":"操作系统, 计算机, linux","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://reisen1969.github.io/","description":"操作系统, 计算机, linux"},"publisher":{"@type":"Organization","name":"Rayrain's blog","url":"https://reisen1969.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://reisen1969.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"启动riscv内核","description":"操作系统, 计算机, linux","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://reisen1969.github.io/2023/07/08/riscv/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://reisen1969.github.io/"},"publisher":{"@type":"Organization","name":"Rayrain's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://reisen1969.github.io/2023/07/08/riscv/","wordCount":0,"datePublished":"2023-07-08T08:41:52.848Z","dateModified":"2023-07-08T08:41:52.848Z","articleSection":"note","keywords":"riscv,linux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
