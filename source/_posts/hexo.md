@@ -1,5 +1,7 @@
 ---
 title: 使用hexo
+categories: note
+tags: [hexo]
 ---
 
 使用hexo的一些记录
@@ -93,3 +95,5 @@ jobs:
 
 更新主题:
 更新时，把 `package.json` 中的版本号改为 `*` 再执行 `npm i` 就可以了。
+
+[自定义设置](https://volantis.js.org/v6/theme-settings/#%E7%BD%91%E7%AB%99%E4%B8%8E%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2)

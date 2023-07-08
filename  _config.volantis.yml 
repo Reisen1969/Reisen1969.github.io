@@ -1,0 +1,77 @@
+# https://volantis.js.org/v6/theme-settings/#%E9%80%89%E6%8B%A9%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F
+
+custom_css:
+  cursor:
+    enable: true
+    text: volantis-static/media/cursor/text.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/text.png
+    pointer: volantis-static/media/cursor/pointer.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
+    default: volantis-static/media/cursor/left_ptr.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
+    not-allowed: volantis-static/media/cursor/circle.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/circle.png
+    zoom-out: volantis-static/media/cursor/zoom-out.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
+    zoom-in: volantis-static/media/cursor/zoom-in.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
+    grab: volantis-static/media/cursor/openhand.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
+
+cover:
+  height_scheme: half # full, half
+ 
+
+custom_css:
+  scrollbar:
+    size: 4px
+    border: 2px
+    color: '#2196f3'
+    hover: '#ff5722'
+
+
+comments:
+  service: beaudar
+ 
+  # beaudar
+  # https://beaudar.lipk.org/
+  beaudar:
+    repo: xxx/xxx
+    issue-term: pathname
+    issue-number:
+    branch: main
+    position: top
+    order: desc
+    theme:
+      light: github-light
+      dark: github-dark
+    label: ✨💬✨
+
+
+search:
+  enable: true
+  service: hexo  # hexo
+  js: https://cdn.jsdelivr.net/xxxxxxxx/js/search/hexo.js
+
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+navbar:
+  visiable: auto # always, auto
+  logo: # choose [img] or [icon + title]
+    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    icon:
+    title:
+  menu:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 友链
+      icon: fa-solid fa-link
+      url: friends/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
+  search: Search...   # Search bar placeholder
+
+  

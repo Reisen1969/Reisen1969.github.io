@@ -46,7 +46,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -106,3 +106,10 @@ deploy:
   repo: https://github.com/Reisen1969/Reisen1969.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
+
+
+symbols_count_time:
+  symbols: true #是否统计字数
+  time: false #是否统计阅读时长
+  total_symbols: true #是否统计总字数
+  total_time: false #是否统计总阅读时长
