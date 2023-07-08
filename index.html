@@ -713,122 +713,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
-}
-.cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-}
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
-}
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
-  }
-}
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
-  }
-}
 @font-face {
   font-family: 'UbuntuMono';
   src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
@@ -1742,7 +1626,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1688805720959),
+    lastupdate: new Date(1688807729127),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2439,7 +2323,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="half" class='cover-wrapper  search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2447,11 +2331,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">Rayrain's note</p>
     
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="A Wonderful Theme for Hexo" />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
@@ -2460,42 +2352,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
+              <p>文档</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
+              <p>帮助</p>
             </a>
           
             <a href="/examples/"
               
               
               active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
+              <p>示例</p>
             </a>
           
             <a href="/contributors/"
               
               
               active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+              <p>社区</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
+              <p>博客</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
               
               
               active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              <p>源码</p>
             </a>
           
         
@@ -2504,7 +2396,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2572,7 +2464,7 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-07-08T09:15:21+00:00">2023-07-08</time>
         
       </div>
       
@@ -2633,7 +2525,7 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-07-08T09:15:21+00:00">2023-07-08</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/note/">note</a>
@@ -2704,7 +2596,7 @@ riscv官方网页
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-07-08T09:15:21+00:00">2023-07-08</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/note/">note</a>
@@ -2767,7 +2659,7 @@ riscv官方网页
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-07-08T08:41:52+00:00">2023-07-08</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-07-08T09:15:21+00:00">2023-07-08</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/note/">note</a>
@@ -2985,9 +2877,9 @@ riscv官方网页
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
+      cover_wrapper.id="half";
       cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3172,51 +3064,65 @@ riscv官方网页
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
 
-  volantis.giscus = {};
+  volantis.beaudar = {};
 
-  function check_giscus() {
+  function check_beaudar() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.beaudar.Theme = 'github-dark';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.beaudar.Theme = 'github-light';
     }
 
-    return document.getElementById("giscus_container");
+    return document.getElementById("beaudar_container");
   }
 
-  function pjax_giscus() {
-    const HEAD = check_giscus();
+  function pjax_beaudar() {
+    const HEAD = check_beaudar();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+
     const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
+    let issuenumber = "";
+    if (issuenumber) {
+      script.setAttribute('issue-number', issuenumber);
+    } else {
+      script.setAttribute('issue-term', "pathname");
+    }
+    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
+    script.setAttribute('repo', 'Reisen1969/Reisen1969.github.io');
+    script.setAttribute('input-position', 'top');
+    script.setAttribute('branch', 'main');
+    script.setAttribute('comment-order', 'desc');
+    script.setAttribute('label', '✨💬✨');
+    script.setAttribute('theme', volantis.beaudar.Theme);
     script.setAttribute('crossorigin', "anonymous");
     HEAD.appendChild(script);
   }
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
+  function dark_beaudar() {
+    const HEAD = check_beaudar();
     if (!HEAD) return;
 
     const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
+      type: 'set-theme',
+      theme: volantis.beaudar.Theme
     };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    const beaudarIframe = document.querySelector('iframe');
+    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
   }
-  pjax_giscus();
-  volantis.pjax.push(pjax_giscus);
-  volantis.dark.push(dark_giscus);
+
+  function check_beaudar_style() {
+    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
+    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
+    const checkStyle = document.querySelector('head').firstElementChild;
+    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
+  }
+
+  pjax_beaudar();
+  volantis.pjax.push(check_beaudar_style);
+  volantis.pjax.push(pjax_beaudar);
+  volantis.dark.push(dark_beaudar);
 </script>
 
     
