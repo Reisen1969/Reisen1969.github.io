@@ -20,25 +20,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>使用hexo - Rayrain's blog</title>
+  <title>记录一下自己使用的vim配置和插件 - Rayrain's blog</title>
 
   
-    <meta name="description" content="使用hexo的一些记录 建站123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install 这个文件夹&#x2F;主目录 作为 main 分支的文件夹, 我打算将gh-pages作为我的主页面. 一些快捷命令1$ hexo server 生成网站并本地预览 1$ hexo deploy 可以一件部署到github需要事先 在 _confi">
+    <meta name="description" content="fzf插件12Plug &amp;#x27;junegunn&#x2F;fzf&amp;#x27;, &amp;#123; &amp;#x27;dir&amp;#x27;: &amp;#x27;~&#x2F;.fzf&amp;#x27;, &amp;#x27;do&amp;#x27;: &amp;#x27;.&#x2F;install --all&amp;#x27; &amp;#125;Plug &amp;#x27;junegunn&#x2F;fzf.vim&amp;#x27;  1nnoremap &lt;silent&gt; &lt;c-p&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo">
-<meta property="og:url" content="https://reisen1969.github.io/2023/07/08/hexo/index.html">
+<meta property="og:title" content="记录一下自己使用的vim配置和插件">
+<meta property="og:url" content="https://reisen1969.github.io/2023/07/08/vim-plugin/index.html">
 <meta property="og:site_name" content="Rayrain&#39;s blog">
-<meta property="og:description" content="使用hexo的一些记录 建站123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install 这个文件夹&#x2F;主目录 作为 main 分支的文件夹, 我打算将gh-pages作为我的主页面. 一些快捷命令1$ hexo server 生成网站并本地预览 1$ hexo deploy 可以一件部署到github需要事先 在 _confi">
+<meta property="og:description" content="fzf插件12Plug &amp;#x27;junegunn&#x2F;fzf&amp;#x27;, &amp;#123; &amp;#x27;dir&amp;#x27;: &amp;#x27;~&#x2F;.fzf&amp;#x27;, &amp;#x27;do&amp;#x27;: &amp;#x27;.&#x2F;install --all&amp;#x27; &amp;#125;Plug &amp;#x27;junegunn&#x2F;fzf.vim&amp;#x27;  1nnoremap &lt;silent&gt; &lt;c-p&amp;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-07-08T10:07:21.993Z">
-<meta property="article:modified_time" content="2023-07-08T10:07:21.993Z">
+<meta property="article:published_time" content="2023-07-08T18:17:19.000Z">
+<meta property="article:modified_time" content="2023-08-27T10:59:45.304Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="vim">
 <meta name="twitter:card" content="summary">
   
   
   
-  <meta name="keywords" content="hexo">
+  <meta name="keywords" content="vim">
 
   <!-- feed -->
   
@@ -62,7 +62,7 @@
 <body>
   
 
-<div class="l_cover post"><div class="cover"><div class="lazy img bg" data-bg="https://source.unsplash.com/2000x400/?hexo"></div></div></div>
+<div class="l_cover post"><div class="cover"><div class="lazy img bg" data-bg="https://source.unsplash.com/2000x400/?vim"></div></div></div>
 
 
   <div class='l_body' id='start'>
@@ -81,7 +81,7 @@
 <widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div></div></widget>
 
 
-<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">使用hexo</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%99"><span class="toc-text">建站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4"><span class="toc-text">一些快捷命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86"><span class="toc-text">github自动化处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-text">主题</span></a></li></ol></div></div></widget>
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">记录一下自己使用的vim配置和插件</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fzf%E6%8F%92%E4%BB%B6"><span class="toc-text">fzf插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#airline%E4%B8%BB%E9%A2%98"><span class="toc-text">airline主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%A0%8F%E6%8F%92%E4%BB%B6"><span class="toc-text">目录栏插件</span></a></li></ol></div></div></widget>
 
 
 
@@ -97,30 +97,17 @@
 
 
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/note/">note</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-07-08T10:07:21.993Z">2023-07-08</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-07-08T18:17:19.000Z">2023-07-08</time></div></div>
 
 <article class='md-text content post'>
-<h1 class="article-title"><span>使用hexo</span></h1>
-<p>使用hexo的一些记录</p>
-<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line"><span class="variable">$</span> npm install</span><br></pre></td></tr></table></figure>
-<p>这个文件夹&#x2F;主目录 作为 <code>main</code> 分支的文件夹, 我打算将<code>gh-pages</code>作为我的主页面.</p>
-<h2 id="一些快捷命令"><a href="#一些快捷命令" class="headerlink" title="一些快捷命令"></a>一些快捷命令</h2><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
-<p>生成网站并本地预览</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo deploy</span><br></pre></td></tr></table></figure>
-<p>可以一件部署到github<br>需要事先 在 <code>_config.yml</code>添加</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> https:<span class="comment">//github.com/&lt;username&gt;/&lt;project&gt;</span></span><br><span class="line">  <span class="meta"># example, https:<span class="comment">//github.com/hexojs/hexojs.github.io</span></span></span><br><span class="line"><span class="symbol">  branch:</span> gh-pages</span><br></pre></td></tr></table></figure>
+<h1 class="article-title"><span>记录一下自己使用的vim配置和插件</span></h1>
+<h2 id="fzf插件"><a href="#fzf插件" class="headerlink" title="fzf插件"></a>fzf插件</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Plug &#x27;junegunn/fzf&#x27;, &#123; &#x27;dir&#x27;: &#x27;~/.fzf&#x27;, &#x27;do&#x27;: &#x27;./install --all&#x27; &#125;</span><br><span class="line">Plug &#x27;junegunn/fzf.vim&#x27;</span><br></pre></td></tr></table></figure>
 
-<p>在 主目录执行 </p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-<p>安装git插件.</p>
-<h2 id="github自动化处理"><a href="#github自动化处理" class="headerlink" title="github自动化处理"></a>github自动化处理</h2><p>使用 node –version 指令检查你电脑上的 Node.js 版本，并记下该版本<br>在储存库中建立 .github&#x2F;workflows&#x2F;pages.yml，并填入以下内容 (将 16 替换为上个步骤中记下的版本)：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">.github/workflows/pages.yml</span></span><br><span class="line"><span class="attr">name:</span> <span class="string">Pages</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span> <span class="comment"># default branch</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">pages:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">permissions:</span></span><br><span class="line">      <span class="attr">contents:</span> <span class="string">write</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Use</span> <span class="string">Node.js</span> <span class="number">16.</span><span class="string">x</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&quot;16&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">NPM</span> <span class="string">dependencies</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.OS</span> <span class="string">&#125;&#125;-npm-cache</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.OS &#125;&#125;-npm-cache</span></span><br><span class="line"><span class="string"></span>      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;silent&gt;</span> <span class="symbol">&lt;c-p&gt;</span> :Files <span class="symbol">&lt;CR&gt;</span></span><br></pre></td></tr></table></figure>
+<p>全范围搜索文件名</p>
+<h2 id="airline主题"><a href="#airline主题" class="headerlink" title="airline主题"></a>airline主题</h2><figure class="highlight sml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Plug</span> <span class="symbol">&#x27;vim</span>-airline/vim-airline&#x27;</span><br><span class="line"><span class="type">Plug</span> <span class="symbol">&#x27;vim</span>-airline/vim-airline-themes&#x27;</span><br></pre></td></tr></table></figure>
 
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>在 blog&#x2F;_config.yml 文件中找到并修改：</p>
-<p><code>theme: volantis</code></p>
-<p>在主目录执行 <code>npm i hexo-theme-volantis</code></p>
-<p>更新主题:<br>更新时，把 <code>package.json</code> 中的版本号改为 <code>*</code> 再执行 <code>npm i</code> 就可以了。</p>
-<p><a target="_blank" rel="noopener" href="https://volantis.js.org/v6/theme-settings/#%E7%BD%91%E7%AB%99%E4%B8%8E%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2">自定义设置</a></p>
+<h2 id="目录栏插件"><a href="#目录栏插件" class="headerlink" title="目录栏插件"></a>目录栏插件</h2><p>Plug ‘preservim&#x2F;nerdtree’, { ‘on’: ‘NERDTreeToggle’ }</p>
 
 
 
@@ -129,7 +116,7 @@
 
 </article>
 
-<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2023/07/08/hello-world/">Hello World</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2023/07/08/riscv/">启动riscv内核</a></div></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2023/08/27/wsl2proxy/">wsl2终端代理设置</a></div><div class="item" id="next"></div></section></div>
 
 
 <div class="related-wrap reveal" id="related-posts">
@@ -137,7 +124,7 @@
       <div class='title cap theme'>Related Posts</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="/2023/07/08/riscv/" title="启动riscv内核"><span class="title">启动riscv内核</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="/2023/08/27/hello-world/" title="Hello World"><span class="title">Hello World</span></a></div></section></div>
 
 
 
