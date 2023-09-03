@@ -45,6 +45,12 @@ deploy:
 ```
 安装git插件.
 
+
+```
+hexo new post tmp
+```
+新建一篇post
+
 ## github自动化处理
 
 使用 node --version 指令检查你电脑上的 Node.js 版本，并记下该版本
