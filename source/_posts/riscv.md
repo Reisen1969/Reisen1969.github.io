@@ -2,11 +2,14 @@
 title: 启动riscv内核
 categories: note
 tags: [riscv,linux]
+toc: true
 ---
 
 
 
 在这里只是记录一下,方便以后查阅
+
+<!-- more -->
 
 本文的内容来源
 

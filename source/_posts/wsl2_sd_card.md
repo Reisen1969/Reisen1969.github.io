@@ -2,12 +2,13 @@
 title: wsl2设置sd卡
 date: 2023-10-02 16:09:20
 tags: wsl2
+toc: true
 ---
 
 
 [微软参考](https://learn.microsoft.com/zh-cn/windows/wsl/connect-usb0)
 
-
+<!-- more -->
 
 ## 重新编译wsl内核
 原版的wsl不带sd卡的驱动, 需要重新编译内核

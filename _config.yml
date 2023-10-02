@@ -1,10 +1,10 @@
-title: Rayrain's blog
-subtitle: ''
-description: 操作系统, 计算机, linux
+title: rayrain's Blog
+subtitle: null
+description: note
 keywords: null
-author: John Doe
-language: en
-timezone: ''
+author: xfqwdsj
+language: zh-CN
+timezone: Asia/Shanghai
 url: https://reisen1969.github.io
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -34,22 +34,34 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
-  tab_replace: ''
+  auto_detect: false
+  tab_replace: '    '
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: '    '
 index_generator:
   path: ''
   per_page: 10
   order_by: '-date'
-default_category: uncategorized
-category_map: null
-tag_map: null
+default_category: 未分类
+category_map:
+  未分类: uncategorized
+  技术: technology
+  生活: life
+tag_map:
+  技术: technology
+  Caddy: caddy
+  V2Ray: v2ray
+  Trojan: trojan
+  服务器: server
+  代理: proxy
+  GFW: gfw
+  博客: blog
+  网络: network
 meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
@@ -60,12 +72,12 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
+sitemap:
+  path: sitemap.xml
+  rel: true
+  tags: false
+  categories: false
 deploy:
   type: git
   repo: https://github.com/Reisen1969/Reisen1969.github.io
   branch: gh-pages
-symbols_count_time:
-  symbols: true
-  time: false
-  total_symbols: true
-  total_time: false

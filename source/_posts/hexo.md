@@ -4,10 +4,12 @@ categories:
 - note
 tags:
 - hexo
+toc: true
 ---
 
 使用hexo的一些记录
 
+<!-- more -->
 
 ## 建站
 ```

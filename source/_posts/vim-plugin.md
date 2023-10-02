@@ -2,8 +2,11 @@
 title: 记录一下自己使用的vim配置和插件
 date: 2023-07-08 18:17:19
 tags: vim
+toc: true
 ---
 
+
+<!-- more -->
 ## fzf插件
 
 ```

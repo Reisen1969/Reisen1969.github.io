@@ -2,14 +2,14 @@
 title: draft
 date: 2023-08-27 19:26:01
 tags: draft
+toc: true
 ---
-
-
 
 
 
 riscv 内核系统调用定义的文件 `linux/include/uapi/asm-generic/unistd.h`
 
+<!-- more -->
 
 ## 为riscv内核添加系统调用的方法
 

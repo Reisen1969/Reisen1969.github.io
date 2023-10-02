@@ -2,10 +2,13 @@
 title: wsl2终端代理设置
 categories: note
 tags: [wsl2,proxy]
+toc: true
 ---
 
 # wsl2终端代理设置
 
+
+<!-- more -->
 ```
 hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 wslip=$(hostname -I | awk '{print $1}')

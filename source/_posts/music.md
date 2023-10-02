@@ -4,6 +4,7 @@ categories:
 - music
 tags:
 - music
+toc: true
 ---
 
 ## 基本知识
@@ -24,6 +25,8 @@ C  D  E  F  G  A  B  C
 
 3 6 7 减半音就可以了
 
+
+<!-- more -->
 
 ## 一些其他音阶
 中国民族音: 1 2 3 5 6
